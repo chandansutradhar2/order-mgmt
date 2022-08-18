@@ -1,3 +1,3 @@
 function signup(){
-	console.log("signup function added");
+console.log("account created successfully");
 }
