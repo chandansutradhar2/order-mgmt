@@ -9,7 +9,10 @@ http.get('/auth/signup',(req,res)=>{
 http.get('/auth/login',(req,res)=>{
     
     res.send('auth successfull')
+
 })
+http.get('login',(req,res)=>{
+    res.send('auth login successfull')
 
 http.get('/auth/resetpassword',(req,res)=>{
     res.send('password reset successfully')
