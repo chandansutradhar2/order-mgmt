@@ -11,3 +11,12 @@ http.get('/auth/login',(req,res)=>{
     res.send('auth successfull')
 })
 
+http.get('/auth/resetpassword',(req,res)=>{
+    res.send('password reset successfully')
+})
+
+
+http.get('/auth/getuserId',(req,res)=>{
+    res.send('password reset successfully')
+})
+
