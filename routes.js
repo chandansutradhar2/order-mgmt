@@ -6,8 +6,9 @@ function login(){
     console.log('login function here');
 }
 
-function resetPassword(){
-console.log("password reset done...");
+function forgotPassword(){
+    console.log("user password reset successfully")
+
 }
 
 function logout(){
