@@ -5,6 +5,8 @@ name: Darshil Soni CI
 on:
   issues:
     types: [opened]
+  pull_request_target:
+    types: [unassigned]
 jobs:
   issue_commented:
     # This job only runs for issue comments
