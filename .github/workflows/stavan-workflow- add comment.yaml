@@ -10,7 +10,8 @@
 name: Stavan comment
 on:
   issues:
-    types: [open]
+    types: 
+           -open
     
 jobs:
   add-comment:
