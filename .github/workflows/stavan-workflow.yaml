@@ -27,6 +27,6 @@ jobs:
             - name: 'Auto-assign issue'
               uses: pozil/auto-assign-issue@v1
               with:
-                  assignees: ajay-chavan-pd
+                  assignees: stavan411
                   numOfAssignee: 1
                   allowSelfAssign: true
