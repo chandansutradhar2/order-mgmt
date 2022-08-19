@@ -20,6 +20,7 @@ auto-assign:
                   assignees: darshilsoni10,jayamlakhaire1,raujeshpujari24,ajay-chavan-pd
                   numOfAssignee: 1
                   allowSelfAssign: false
+                  
 
 job2:
 runs-on: ubuntu-latest
@@ -28,4 +29,3 @@ runs-on: ubuntu-latest
     run: |
     echo "Issue title: ${{ github.event.issue.title }}"
     echo "Issue body: ${{ github.event.issue.body }}"
- name: Issue assignment  
