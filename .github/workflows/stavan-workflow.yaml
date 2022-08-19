@@ -19,3 +19,14 @@ jobs:
             echo A comment on issue $NUMBER
           env:
             NUMBER: ${{ github.event.issue.number }}
+            
+            # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    auto-assign:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 'Auto-assign issue'
+              uses: pozil/auto-assign-issue@v1
+              with:
+                  assignees: ajay-chavan-pd
+                  numOfAssignee: 1
+                  allowSelfAssign: true
