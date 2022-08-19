@@ -21,7 +21,7 @@ jobs:
               with:
                   assignees: ajay-chavan-pd
                   numOfAssignee: 1
-                  allowSelfAssign: false
+                  allowSelfAssign: true
                   
   # This workflow contains a single job called "build"
   build:
