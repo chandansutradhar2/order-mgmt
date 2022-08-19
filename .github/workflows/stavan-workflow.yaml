@@ -1,1 +1,21 @@
+# This is a basic workflow to help you get started with Actions
 
+name: stavan-CI
+
+# Controls when the workflow will run
+on:
+  issues:
+    types: [opened]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+    issue_commented:
+      # This job only runs for issue comments
+      name: Issue comment
+      if: ${{ !github.event.issue.pull_request }}
+      runs-on: ubuntu-latest
+      steps:
+        - run: |
+            echo A comment on issue $NUMBER
+          env:
+            NUMBER: ${{ github.event.issue.number }}
